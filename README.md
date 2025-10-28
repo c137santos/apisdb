@@ -40,10 +40,10 @@ Esse portfólio apresenta os projetos desenvolvidos durante o curso de Tecnologi
 
 ## ESTRUTURA DO PORTFÓLIO - Projetos desenvolvidos
 
-- 1º Semestre - [PBLTex - gestão e acompanhamento de scores de alunos](1semestre.MD)
-- 2º Semestre - [Tree -gestão de dados climáticos](2semestre.MD)
-- 3º Semestre - [NewFy - Captura e armazenamento de notícias estratégicas e dados relevantes relacionados](3semestre.MD)
-- 4º Semestre - [Nome do projeto]
+- 1º Semestre - [PBLTex - gestão e acompanhamento de scores de alunos](./1semestre/1semestre.MD)
+- 2º Semestre - [Tree - gestão de dados climáticos](./2semestre/2semestre.MD)
+- 3º Semestre - [Newfy - Ferramenta de captura e armazenamento de notícias estratégicas](./3semestre/3semestre.MD)
+- 4º Semestre - [TerraVision - Sistema WEB para manipulação e gerenciamento de dados espaciais em Fazendas](./4semestre/4semestre.MD)
 - 5º Semestre - [Nome do projeto]
 - 6º Semestre - [Nome do projeto]
 

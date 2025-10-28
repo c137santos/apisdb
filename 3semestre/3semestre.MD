@@ -1,16 +1,8 @@
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Newfy</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    </head>
-
 <div align="center">
 
 # Newfy 
 
-Ferramenta de captura e armazenamento de notícias estratégicas e dados relevantes publicados em API oficiais associados ao tema. Projeto voltado ao treino de  CRUD Web, Requisitos não funcionais (Linguagem OO, BD Relacional)
+Ferramenta de captura e armazenamento de notícias estratégicas e dados relevantes publicados em API oficiais associados ao tema. Projeto voltado ao treino de CRUD Web, Requisitos não funcionais (Linguagem OO, BD Relacional)
 
 ### [Repositório do projeto NewFy ](https://github.com/c137santos/FATEC-API-3-SEMESTRE/tree/main)
 
@@ -70,7 +62,6 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 
 O flyway ficou responsável por auxiliar nas migrações do banco de dados e guardar os scripts de migração. Para isso, precisei configurar o `application.properties` com as informações do banco de dados, como a URL, usuário e senha. Além disso, também configurei o `flyway.schemas` para indicar qual era o schema que o flyway deveria utilizar.
 
-### Dificuldade
 
 ### Dificuldade
 
@@ -145,3 +136,5 @@ public class CronCrawler {
 	}
 }
 ```
+
+</div>
