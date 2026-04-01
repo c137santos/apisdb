@@ -10,8 +10,6 @@ Sistema WEB para manipulação e gerenciamento de dados espaciais em Fazendas
 
 ## Descrição do projeto
 
-## Descrição do projeto
-
 O TerraVision é um sistema web desenvolvido para manipulação, gerenciamento e análise de dados espaciais, com foco em aplicações agrícolas e ambientais. O objetivo principal do projeto foi criar uma plataforma capaz de visualização, edição e análise de dados em tempo real dos dados geoespeciais.
 
 A aplicação foi desenhada para atender diferentes perfis de usuários: administradores, analistas e consultores. O que nos forçou a trabalhar com permissionamento por usuário e feature.
