@@ -1,77 +1,37 @@
+# Clara Santos
 
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Newfy</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    </head>
+<img src="./Image/clara-santos.png?raw=true" alt="Clara Santos" style="width: 300px; display: block; margin: 0 auto;">
 
+Meu nome é Clara Santos. Iniciei minha carreira na área de tecnologia como estagiária em uma empresa de tecnologia em São José dos Campos, onde convivi com ex-alunos da FATEC que me incentivaram a ingressar no curso de Banco de Dados. Em 2023, comecei o curso de Tecnologia em Banco de Dados na FATEC São José dos Campos, motivada pelo exemplo desses colegas que se destacaram no mercado após a formação.
 
-<div align="center">
+Profissionalmente, acumulo 4 anos de experiência em desenvolvimento web. Após iniciar como estagiária, fui promovida a desenvolvedora pleno, atuando atualmente com desenvolvimento web e MLops em uma empresa de tecnologia.
 
-# FACULDADE DE TECNOLOGIA DE SÃO JOSÉ DOS CAMPOS <br/><br/> FATEC PROFESSOR JESSEN VIDAL
+## Contatos
 
-<br/>
-<br/>
+* [GitHub](https://github.com/c137santos)
+* [LinkedIn](https://www.linkedin.com/in/c137santos/)
+* [E-mail](mailto:clarasantosmf@gmail.com)
 
-## M. Clara F. Santos
+## Meus Principais Conhecimentos
 
-<br/>
+Tenho maior afinidade e experiência em desenvolvimento back-end, com foco em construção de APIs e modelagem de banco de dados. Atualmente me aprofundo em MLops, área que tenho aplicado no dia a dia profissional. Entre meus principais conhecimentos, destacam-se:
 
-### Portfólio de API's em Banco de Dados FATEC-SJC
+* Python
+* PostgreSQL
+* PostGIS
+* Vue.js
+* Docker
+* MLops
+* Java
+* Spring Boot
 
-<br/>
-<br/>
+## Meus Projetos
 
-### Portfólio de Graduação apresentado à Faculdade de Tecnologia de São José dos Campos, como parte dos requisitos necessários para a obtenção do título de Tecnólogo em Banco de Dados
-
-<br/>
-<br/>
-
-### São José dos Campos - SP
-### 2026
-</div>
-
-
-## RESUMO
-
-Esse portfólio apresenta os projetos desenvolvidos durante o curso de Tecnologia em Banco de Dados na FATEC São José dos Campos. O objetivo é demonstrar as habilidades adquiridas e a aplicação prática dos conhecimentos em banco de dados, com foco em API's.
-
-## ESTRUTURA DO PORTFÓLIO - Projetos desenvolvidos
-
-- 1º Semestre - [PBLTex - gestão e acompanhamento de scores de alunos](./1semestre/1semestre.MD)
-- 2º Semestre - [Tree - gestão de dados climáticos](./2semestre/2semestre.MD)
-- 3º Semestre - [Newfy - Ferramenta de captura e armazenamento de notícias estratégicas](./3semestre/3semestre.MD)
-- 4º Semestre - [TerraVision - Sistema WEB para manipulação e gerenciamento de dados espaciais em Fazendas](./4semestre/4semestre.MD)
-- 5º Semestre - [Nome do projeto]
-- 6º Semestre - [Nome do projeto]
-
-
-## Tecnologias utilizadas em todo o portfólio
-
-As tecnologias utilizadas nos projetos abrangem diversas ferramentas e linguagens que foram essenciais para o desenvolvimento das soluções propostas:
-
-- **Python**: Utilizado na primeira API - PTLTex - como linguaguem principal.  
-- **Java com Spring Boot**: Framework principal para o desenvolvimento das APIs, oferecendo uma estrutura robusta e eficiente para a criação de serviços backend.  
-- **PostgreSQL**: Banco de dados relacional utilizado para armazenar e gerenciar os dados do projeto, garantindo confiabilidade e desempenho.  
-- **Hibernate**: Framework de mapeamento objeto-relacional (ORM) usado para facilitar a interação entre as entidades Java e o banco de dados PostgreSQL.  
-- **Vue.js**: Framework JavaScript utilizado para o desenvolvimento da interface do usuário, proporcionando uma experiência interativa e dinâmica.  
-- **Docker**: Ferramenta de containerização que permitiu a padronização do ambiente de desenvolvimento e a fácil implantação do projeto em diferentes plataformas.  
-
-Essas tecnologias foram escolhidas por sua eficiência, flexibilidade e adequação às necessidades do projeto.
-
-##  RESULTADOS OBTIDOS
-##  CONCLUSÃO
-
-## CONTATO
-
-## 📫 Contato
-
-- <i class="fas fa-envelope"></i> E-mail: clarasantosmf@gmail.com
-- <i class="fab fa-linkedin"></i> LinkedIn: https://www.linkedin.com/in/c137santos/  
-- <i class="fab fa-github"></i> GitHub: https://github.com/c137santos
-
-
----
-© 2024 Clara Santos. Todos os direitos reservados.
+| Semestre | Projeto | Descrição |
+|----------|---------|-----------|
+| [1º Semestre (2023-2)](./1semestre/1semestre.MD) | PBLTex | Sistema educacional de gestão e acompanhamento de scores de alunos por ciclos de entrega |
+| [2º Semestre (2024-1)](./2semestre/2semestre.MD) | Treelaw | Sistema desktop para coleta, validação e análise de dados climáticos por região |
+| [3º Semestre (2024-2)](./3semestre/3semestre.MD) | Newfy | Ferramenta web de captura automática e armazenamento histórico de notícias estratégicas |
+| [4º Semestre (2025-1)](./4semestre/4semestre.md) | TerraVision | Sistema web para manipulação e gerenciamento de dados espaciais em fazendas |
+| [5º Semestre (2025-2)](./5semestre/5semestre.MD) | Jibóia | Sistema ETL que consolida dados do Jira em data warehouse dimensional com dashboards analíticos de projetos e times |
+| [6º Semestre (2026-1)](./6semestre/6semestre.md) | Thunderstone | Sistema de análise de mercado e criticidade para redes elétricas de distribuição

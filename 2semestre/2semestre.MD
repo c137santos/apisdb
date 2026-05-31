@@ -1,41 +1,48 @@
-<div align="center">
-
 # Treelaw
 
-## Sistema de acompanhamento de clima por região
+Sistema de acompanhamento e análise de dados climáticos por região
 
-</div>
+### Segundo Semestre (2024-1)
 
+O projeto desenvolvido no segundo semestre do curso teve como empresa parceira a própria FATEC São José dos Campos. Os requisitos foram apresentados pela Professora Juliana (M2) e pelo Professor Mineda (P2), que assumiram o papel de clientes finais do projeto.
 
-### [Repositório do projeto Treelaw ](https://github.com/c137santos/FATEC-API-2-SEMESTRE)
+Nosso cliente dessa API foi a FATEC, representado pela Profª.Juliana.
 
+O problema apresentado consistia na dificuldade de setores dependentes de dados climáticos — como agricultura e planejamento ambiental — em receber, validar e analisar registros provenientes de diferentes estações meteorológicas. Os dados chegavam em formatos variados e frequentemente continham registros suspeitos, como temperaturas fora dos padrões aceitáveis, que precisavam de revisão manual sem qualquer ferramenta de suporte.
 
+Como solução, minha equipe desenvolveu um sistema desktop em Java que recebe arquivos CSV de estações meteorológicas, valida automaticamente os registros, separa os dados suspeitos para revisão manual e gera relatórios de médias de variáveis climáticas por cidade e período, com periodicidade horária.
 
-## Descrição do Projeto
+[Repositório GitHub](https://github.com/c137santos/FATEC-API-2-SEMESTRE)
 
-O projeto Treelaw foi desenvolvido com o objetivo de facilitar o acompanhamento e análise do clima por região, atendendo especialmente demandas de setores que dependem de informações climáticas para o planejamento de suas atividades, como a agricultura. Reconhecendo a importância de dados precisos sobre temperatura, umidade e outras variáveis, o sistema foi projetado para receber arquivos CSV provenientes de diferentes estações de monitoramento, validar seu conteúdo e prover relatórios detalhados.
+#### Tecnologias Utilizadas
 
-Implementamos funcionalidades para o carregamento e validação de arquivos CSV, tratando automaticamente registros suspeitos (como temperaturas fora de padrões aceitáveis), que são armazenados separadamente para revisão manual. O sistema permite o gerenciamento de estações, cidades e unidades de medida, possibilitando a visualização e edição dessas informações. Também desenvolvemos relatórios de valores médios das variáveis climáticas por cidade e período, com periodicidade horária, além de relatórios de situação que apresentam as últimas médias registradas para cada cidade. O tratamento de registros suspeitos inclui opções para revisão, alteração e integração à base principal ou exclusão definitiva, garantindo a
+As seguintes tecnologias foram utilizadas nesse projeto:
 
-## 🚀 Tecnologias Utilizadas
+* Java - linguagem de programação utilizada tanto no back-end quanto no front-end da aplicação desktop;
+* JavaFX - plataforma utilizada para desenvolvimento da interface gráfica do usuário;
+* JDBC - utilizado para comunicação direta com o banco de dados relacional;
+* PostgreSQL - banco de dados relacional utilizado para armazenamento dos registros climáticos e das configurações de estações.
 
-- <i class="fas fa-server"></i> **Backend**: Java Desktop com conexão ao banco de dados via JDBC  
-- <i class="fas fa-database"></i> **Banco de Dados**: Modelo Relacional  
-- <i class="fas fa-code"></i> **Frontend**: Java Desktop  
-- <i class="fab fa-git"></i> **Controle de Versão**:
+#### Contribuições Pessoais
 
-### Equipe
+Nesse projeto atuei como desenvolvedora. Fui responsável pelo desenvolvimento da funcionalidade de cadastro manual de registros climáticos, criando a interface e a lógica de validação que garantia a existência de tipo de unidade, cidade, hora e estação antes da persistência no banco. Também implementei a tela e a lógica de criação de estações de monitoramento e desenvolvi o relatório de situação com exibição das últimas médias registradas por cidade e suas respectivas unidades de medida.
 
+Além disso, padronizei as conexões com o banco de dados via JDBC ao longo do projeto, abstraindo a lógica de conexão e desconexão em uma classe utilitária, o que reduziu a complexidade e aumentou a consistência nas interações com o banco.
 
-| Integrante | LinkedIn |
-|------|----------|
-| Vinícius Augusto da Silva Monteiro ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viniciusvasm/) |
-| Ricardo Campos ![Static Badge](https://img.shields.io/badge/Product_owner-blue) ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardo-campos-ba56091b5/) |
-| Elbert Jean ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elbert-jean-1757b017b/) |
-| Isaque Souza ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/isaque-souza-6760b8270/) |
-| Maria Clara ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c137santos/) |
-| Marília Borgo ![Static Badge](https://img.shields.io/badge/Scrum_master-pink) ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariliaborgo/) |
-| Paloma Soares ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paloma-soares-83a949208/) |
+#### Hard Skills
+
+Exercitei as seguintes hard skills durante esse projeto:
+
+* Java - uso com autonomia;
+* JavaFX - uso com autonomia;
+* JDBC - uso com autonomia;
+* PostgreSQL - uso com autonomia.
+
+#### Soft Skills
+
+Nesse projeto desenvolvi minha adaptabilidade ao trabalhar como desenvolvedora fullstack em Java Desktop, plataforma com a qual tinha menor afinidade. Apesar de minha preferência pelo desenvolvimento back-end, entreguei funcionalidades completas de interface e lógica de negócio, o que exigiu aprendizado contínuo ao longo das sprints.
+
+Também exercitei minha comunicação ao perceber que algumas mensagens minhas não eram interpretadas conforme esperado pelos demais membros, gerando pequenos conflitos. A partir dessa percepção, passei a verificar o entendimento compartilhado antes de tomar decisões técnicas, o que contribuiu para um ambiente de trabalho mais alinhado nas sprints seguintes.
 
 ## Contribuições Individuais
 
@@ -43,8 +50,7 @@ Como desenvolvedora, atuei em diversas frentes do projeto, contribuindo diretame
 
 Além disso, realizei correções de bugs em relatórios situacionais, contribuí para a diminuição da complexidade na conexão com o banco de dados e participei ativamente das sprints, colaborando com a entrega de funcionalidades e melhorias contínuas. Essas experiências permitiram aprimorar minhas habilidades técnicas em Java Desktop e modelagem de banco de dados relacional.
 
-
-## Dificuldade
+#### Dificuldade
 
 Durante o desenvolvimento deste projeto, evoluí consideravelmente no domínio da linguagem Java, no contexto de aplicações desktop e integração com bancos de dados relacionais via JDBC. 
 
@@ -54,7 +60,7 @@ Outro ponto de dificuldade foi a gestão de repositórios no GitHub. Tive proble
 
 Por fim, atuei de forma fulltask, contribuindo tanto no backend quanto no frontend do sistema. Apesar de ter mais afinidade e potencial para trabalhar com backend, o desenvolvimento do frontend em Java foi um desafio adicional, pois era uma área mais nova para mim. Essa experiência exigiu adaptação e aprendizado contínuo para entregar soluções completas e integradas ao
 
-## Aprendizados e ganhos com o projeto
+#### Aprendizados e ganhos com o projeto
 
 Ao longo do projeto, evoluí significativamente no domínio da linguagem Java, especialmente no desenvolvimento de aplicações desktop e na integração com bancos de dados relacionais utilizando JDBC. Esse processo de aprendizado prático me proporcionou maior segurança para lidar com desafios técnicos e implementar soluções mais eficientes.
 
@@ -173,5 +179,3 @@ public class InsertData {
 
 }
 ```
-
-Além do crescimento técnico, também desenvolvi habilidades interpessoais, aprimorando minha comunicação com a equipe. Passei a me expressar de forma mais clara e a buscar sempre o alinhamento entre todos os envolvidos, o que contribuiu para um ambiente de trabalho mais colaborativo e produtivo. Esses aprendizados foram fundamentais para meu desenvolvimento como profissional e para o sucesso do

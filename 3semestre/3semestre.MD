@@ -1,46 +1,57 @@
-<div align="center">
+# Newfy
 
-# Newfy 
+Ferramenta de captura e armazenamento de notícias estratégicas
 
-Ferramenta de captura e armazenamento de notícias estratégicas e dados relevantes publicados em API oficiais associados ao tema. Projeto voltado ao treino de CRUD Web, Requisitos não funcionais (Linguagem OO, BD Relacional)
+### Terceiro Semestre (2024-2)
 
-### [Repositório do projeto NewFy ](https://github.com/c137santos/FATEC-API-3-SEMESTRE/tree/main)
+O projeto desenvolvido no terceiro semestre do curso teve como empresa parceira a GSW Software, empresa de desenvolvimento de software com foco em soluções tecnológicas para o mercado corporativo.
 
-</div>
+Primeira vez com cliente, a empresa parceira foi a [GSW Sofware](https://pitsjc.org.br/empresas/gsw/?__cf_chl_tk=Oadw5xOIX8N3p9N3zMLQaaPAovMKruknHwLsSBh0faQ-1744635957-1.0.1.1-yYGVjlGCNsyG42toG2oO76EmA8jZF8RUiam24O2XQ_M). 
 
-## Descrição do projeto
+O problema apresentado consistia na necessidade da GSW Software em monitorar portais de notícias relevantes para os negócios de seus clientes de forma automatizada. Sem uma ferramenta adequada, o acompanhamento era feito manualmente, impossibilitando a criação de um histórico de publicações e a correlação dessas notícias com dados estratégicos de APIs externas para análises comparativas.
 
-Ferramenta de captura e armazenamento de notícias estratégicas e dados relevantes publicados em API oficiais associados ao tema. O desafio foi criar macânismo para o mapeamento de portais de notícias cadastradas pelo cliente, para a captura do conteúdo veiculado, com um armazenamento desses, formando assim um banco de dados histórico das publicações. 
+Como solução, minha equipe desenvolveu uma plataforma web com crawler automático que monitora portais de notícias cadastrados pelo cliente, captura e armazena um histórico de publicações e permite a correlação com dados de APIs externas — como dados climáticos do INPE — para análises estratégicas sobre os temas monitorados.
 
-Além disso, também foi necessário a captura e armazenamento de dados estratégios provindos de API oficiais para fins de comparações futuras. Exemplo, captura de dados relacionados a agricultura, e dados da API de dados climaticos do INPE, por exemplo, uma aferição de se as notícias veiculadas no dia X sobre possível seca correspondia as previsões do INPE daquela data. 
+[Repositório GitHub](https://github.com/c137santos/FATEC-API-3-SEMESTRE)
 
-A empresa parceira foi a [GSW Sofware](https://pitsjc.org.br/empresas/gsw/?__cf_chl_tk=Oadw5xOIX8N3p9N3zMLQaaPAovMKruknHwLsSBh0faQ-1744635957-1.0.1.1-yYGVjlGCNsyG42toG2oO76EmA8jZF8RUiam24O2XQ_M). 
+#### Tecnologias Utilizadas
+
+As seguintes tecnologias foram utilizadas nesse projeto:
+
+* Java com Spring Boot - framework utilizado no back-end para construção da API REST e para o agendamento do crawler com a anotação `@Scheduled`;
+* PostgreSQL - banco de dados relacional utilizado para armazenamento das notícias, portais cadastrados e configurações do sistema;
+* Hibernate - ORM utilizado para mapeamento das entidades Java ao banco de dados, configurado como validador com `spring.jpa.hibernate.ddl-auto=validate`;
+* Flyway - utilizado para controle e versionamento das migrações do banco de dados;
+* Vue.js - framework JavaScript utilizado no front-end para interface de cadastro de portais e visualização de notícias;
+* Docker e DevContainer - utilizados para padronização e containerização do ambiente de desenvolvimento de toda a equipe;
+* Crawler4J - biblioteca Java utilizada para navegação e extração de conteúdo HTML dos portais de notícias cadastrados.
 
 
-## 🚀 Tecnologias Utilizadas
+#### Contribuições Pessoais
 
-- <i class="fas fa-server"></i> **Backend**: Java com framework Spring Boot  
-- <i class="fas fa-database"></i> **Banco de Dados**: PostgreSQL  
-- <i class="fas fa-exchange-alt"></i> **ORM**: Hibernate e flyway 
-- <i class="fas fa-code"></i> **Frontend**: JavaScript com framework Vue.js  
-- <i class="fab fa-docker"></i> **Containerização**: Docker e DevContainer  
+Nesse projeto atuei como Scrum Master e Tech Lead da equipe. Minha primeira contribuição foi modelar o banco de dados do sistema, que serviu como ponto de partida para o design de todo o produto. Também fui responsável por resolver o conflito de configuração entre Hibernate e Flyway: configurei o Hibernate como validador das entidades via `spring.jpa.hibernate.ddl-auto=validate`, retirando dele a responsabilidade de migração e delegando essa função inteiramente ao Flyway, além de definir o dialeto PostgreSQL e as configurações de conexão.
 
+Organizei o kanban no GitHub Projects com 78 cards derivados de 17 user stories, gerenciando issues, fluxo de pull requests e code reviews ao longo das sprints. Produzi a documentação do projeto, incluindo o manual do usuário e a documentação dos campos do banco de dados. Por fim, implementei o controle de versão por tags e a publicação de releases no GitHub.
 
-## Equipe
+#### Hard Skills
 
-Nossa equipe foi batizada de Cerberus, e nesse time assumi o cargo de Scrum Master, e colaborei com os seguites membros:
+Exercitei as seguintes hard skills durante esse projeto:
 
-| Integrante                                                                                                                             | LinkedIn                                                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Clara Santos ![Static Badge](https://img.shields.io/badge/Scrum_master-pink) ![Static Badge](https://img.shields.io/badge/Dev-black)   | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c137santos/)                  |
-| Marília Borgo ![Static Badge](https://img.shields.io/badge/Product_owner-blue) ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariliaborgo/)                |
-| Matheus Marciano ![Static Badge](https://img.shields.io/badge/Dev-black)                                                               | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-marciano-leite/)      |
-| Guilherme Bezerra Junqueira ![Static Badge](https://img.shields.io/badge/Dev-black)                                                    | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guilherme-bezerra-a01035170/) |
-| Pedro Henrique Lopes de Souza ![Static Badge](https://img.shields.io/badge/Dev-black)                                                  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pelopes7/)                    |
-| Yan Costa Yamim ![Static Badge](https://img.shields.io/badge/Dev-black)                                                                | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yan-yamim-185220278/)         |
-| Eduardo da Silva Lima ![Static Badge](https://img.shields.io/badge/Dev-black)                                                          | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edu-datamarketing/)           |
+* Java - uso com autonomia;
+* Spring Boot - uso com autonomia;
+* PostgreSQL - uso com autonomia;
+* Hibernate - uso com autonomia;
+* Flyway - uso com autonomia;
+* Vue.js - uso com autonomia;
+* Docker - uso com autonomia.
 
-## Contribuições Individuais
+#### Soft Skills
+
+Nesse projeto exercitei minha proatividade ao identificar que a diversidade de ambientes da equipe representava um risco para as entregas: dois membros usavam Windows em máquinas pessoais, um utilizava computadores da FATEC que precisavam ser reconfigurados a cada uso, e outro só tinha acesso a uma máquina fraca do trabalho onde não podia instalar dependências. Sem que isso fosse requisito do projeto, implementei o DevContainer — um container Docker com todas as dependências necessárias — eliminando esses problemas de ambiente para toda a equipe.
+
+Também utilizei comunicação e persuasão ao enfrentar resistência inicial da equipe na adoção da ferramenta. Apresentei os benefícios de forma comparativa, demonstrando que abrir o DevContainer era mais simples do que configurar o ambiente do zero no Windows, argumento que convenceu o time após as primeiras experiências práticas.
+
+#### Contribuições Individuais
 
 Atuei como dev pontualmente. Nesse projeto, foquei mais na organização da equipe e na comunicação entre os membros. Além disso, também fui responsável por retirar os impedimento que surgiu no caminho, manter o burdown evoluindo e ser TechLead dos integrantes. Ou seja, direcionava para onde as soluções tecnicas deveriam caminhar. 
 
@@ -136,5 +147,3 @@ public class CronCrawler {
 	}
 }
 ```
-
-</div>

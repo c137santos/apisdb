@@ -1,56 +1,52 @@
-<div align="center">
+# TerraVision
 
-# TerraVision 
+Sistema web para manipulação e gerenciamento de dados espaciais em fazendas
 
-Sistema WEB para manipulação e gerenciamento de dados espaciais em Fazendas
+### Quarto Semestre (2025-1)
 
-### [Repositório do projeto TerraVision ](https://github.com/c137santos/FATEC-API-4-SEMESTRE-PARENT/tree/main)
+O projeto desenvolvido no quarto semestre do curso teve como empresa parceira a Visiona Espacial, empresa especializada em inteligência geoespacial e sensoriamento remoto aplicados à agricultura de precisão.
 
-</div>
+O problema apresentado consistia na limitação dos modelos de inteligência artificial utilizados pela Visiona para mapeamento de evidências em lavouras (soja, milho, citros, cana-de-açúcar, algodão, entre outras). Esses modelos apresentavam deficiências diretamente relacionadas à falta de amostras de treinamento eficientes. Sem uma ferramenta que permitisse a especialistas visualizar, editar e validar os dados geoespaciais produzidos pela IA, não havia como gerar dados de benchmark de qualidade para retroalimentar e melhorar a performance dos modelos.
 
-## Descrição do projeto
+Como solução, minha equipe desenvolveu um sistema web com três perfis de usuário — administrador, analista e consultor — para viabilizar a revisão colaborativa de dados geoespaciais de talhões agrícolas. O analista acessa listas de talhões com informações geoespaciais e alfanuméricas, visualiza mapas de problemas evidenciados pela IA via protocolo OGC e pode aprovar, rejeitar ou editar vetorialmente as geometrias diretamente no sistema. O consultor realiza o cadastro de áreas via upload de arquivo GeoJSON, informando cultura, produtividade, tipo de solo e localização, e acompanha dashboards com indicadores quantitativos e qualitativos da evolução das análises. O administrador acumula todas as funções mais o cadastro de usuários.
 
-O TerraVision é um sistema web desenvolvido para manipulação, gerenciamento e análise de dados espaciais, com foco em aplicações agrícolas e ambientais. O objetivo principal do projeto foi criar uma plataforma capaz de visualização, edição e análise de dados em tempo real dos dados geoespeciais.
+[Repositório GitHub](https://github.com/c137santos/FATEC-API-4-SEMESTRE-PARENT)
 
-A aplicação foi desenhada para atender diferentes perfis de usuários: administradores, analistas e consultores. O que nos forçou a trabalhar com permissionamento por usuário e feature.
+#### Tecnologias Utilizadas
 
-O TerraVision utiliza Java com Spring Boot no backend, PostgreSQL como banco de dados relacional, Hibernate e Flyway para ORM e migração, e Vue.js no frontend. A infraestrutura foi padronizada com Docker e DevContainer, não exigidos, mas implementados. O sistema também conta com documentação completa, incluindo manual do usuário, guia de instalação, documentação da API e modelagem do banco de dados.
+As seguintes tecnologias foram utilizadas nesse projeto:
 
-A empresa parceira foi a [GSW Sofware](https://pitsjc.org.br/empresas/gsw/?__cf_chl_tk=Oadw5xOIX8N3p9N3zMLQaaPAovMKruknHwLsSBh0faQ-1744635957-1.0.1.1-yYGVjlGCNsyG42toG2oO76EmA8jZF8RUiam24O2XQ_M). 
+* Java com Spring Boot - framework utilizado no back-end para construção dos endpoints REST e implementação da lógica de negócio;
+* Spring Security - utilizado para implementação de autenticação e controle de autorização por perfil de usuário (administrador, analista e consultor);
+* PostgreSQL com PostGIS - banco de dados relacional com extensão geoespacial utilizado para armazenamento e manipulação de geometrias MultiPolygon;
+* Hibernate e Flyway - ORM e controle de migrações do banco de dados;
+* JTS (Java Topology Suite) - biblioteca Java utilizada para processamento de geometrias GeoJSON e conversão para o tipo MultiPolygon persistido no PostGIS;
+* Vue.js - framework JavaScript utilizado no front-end para construção dos componentes de cadastro e visualização de dados;
+* Leaflet - biblioteca JavaScript utilizada no front-end para renderização de mapas interativos e visualização das geometrias geoespaciais dos talhões;
+* Docker e DevContainer - utilizados para padronização do ambiente de desenvolvimento da equipe.
 
+#### Contribuições Pessoais
 
-## 🚀 Tecnologias Utilizadas
+Nesse projeto atuei como desenvolvedora, com foco principal no back-end. Fui responsável pela criação e manutenção de endpoints REST para cadastro, consulta e listagem de talhões, fazendas e resultados de análises. Implementei a lógica de cálculo da porcentagem de edição entre resultados de IA e intervenções do QA, além de participar do refatoramento do banco de dados para maior eficiência e organização das informações.
 
-- <i class="fas fa-server"></i> **Backend**: Java com Spring Boot  
-- <i class="fas fa-database"></i> **Banco de Dados**: PostgreSQL  
-- <i class="fas fa-exchange-alt"></i> **ORM/Migração**: Hibernate e Flyway  
-- <i class="fas fa-code"></i> **Frontend**: Vue.js (JavaScript)  
-- <i class="fab fa-docker"></i> **Containerização/Ambiente**:
+Também desenvolvi um serviço para processamento e persistência de geometrias MultiPolygon: o serviço recebe dados em formato GeoJSON, processa a geometria utilizando a biblioteca JTS e persiste as informações no banco com suporte PostGIS, convertendo as entidades salvas em DTOs para retorno à aplicação. No front-end, desenvolvi o componente de formulário e a view para cadastro de talhões, bem como a interface de cadastro de resultados de AI enhancement.
 
-## Equipe
+#### Hard Skills
 
-Nossa equipe foi batizada de Cerberus, e nesse time assumi o cargo de Scrum Master, e colaborei com os seguites membros:
+Exercitei as seguintes hard skills durante esse projeto:
 
-| Integrante                                                                                                                             | LinkedIn                                                                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Yan Yamim ![Static Badge](https://img.shields.io/badge/Product_owner-blue) ![Static Badge](https://img.shields.io/badge/Dev-black)   | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yan-yamim-185220278/)                  |
-| Matheus Marciano ![Static Badge](https://img.shields.io/badge/Scrum_master-pink) ![Static Badge](https://img.shields.io/badge/Dev-black) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-marciano-leite/)                |
-| Maria Clara Santos ![Static Badge](https://img.shields.io/badge/Dev-black)                                                    | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c137santos/) |
-| Pedro Henrique Lopes de Souza ![Static Badge](https://img.shields.io/badge/Dev-black)                                                  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pelopes7/)                    |
-| Marília Borgo ![Static Badge](https://img.shields.io/badge/Dev-black)                                                          | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariliaborgo/)           |
-   |
+* Java - uso com autonomia;
+* Spring Boot - uso com autonomia;
+* PostgreSQL / PostGIS - uso com autonomia;
+* JTS (Java Topology Suite) - uso com autonomia;
+* Vue.js - uso com autonomia;
+* Docker - uso com autonomia.
 
-## Contribuições Individuais
+#### Soft Skills
 
+Nesse projeto exercitei meu aprendizado rápido ao trabalhar pela primeira vez com dados geoespaciais e geometrias complexas como MultiPolygon. Sem experiência prévia em geoprocessamento, pesquisei de forma independente sobre sistemas de referência de coordenadas (CRS), a biblioteca JTS e a extensão PostGIS para implementar corretamente o serviço de persistência de geometrias, o que me permitiu entregar a funcionalidade dentro do prazo da sprint.
 
-## Síntese das Contribuições Individuais
-
-Contribui principalmente no backend. Responsável pela criação e manutenção de endpoints REST para cadastro, consulta e listagem de talhões, fazendas e resultados de análises, além de implementar lógicas específicas como o cálculo de porcentagem de edição entre resultados de IA e QA. 
-
-Também participei do refatoramento do banco de dados para garantir maior eficiência e organização das informações, bem como na integração das funcionalidades backend com o restante da aplicação. Essas atividades exigiram domínio de Java, Spring Boot, modelagem relacional e boas práticas de desenvolvimento de APIs.
-
-Além do backend, também contribuí no frontend do sistema, desenvolvendo o componente de formulário e a view para cadastro de talhões, bem como a interface para cadastro de resultados de AI enhancement. Essas entregas ajudaram a integrar as funcionalidades do backend à experiência do usuário, garantindo um fluxo completo de cadastro e visualização de dados na aplicação.
-
+Também utilizei organização e atenção a detalhes ao estruturar o repositório no padrão "parent" com submódulos separados para frontend e backend. Essa abordagem, incomum em relação aos semestres anteriores, exigiu cuidado extra na configuração de versionamento e integração entre os módulos para garantir que toda a equipe conseguisse trabalhar no projeto sem problemas de ambiente.
 
 ### Dificuldade
 
@@ -103,6 +99,3 @@ public class DaninhasService {
 ```
 
 Como esta exposto nesse exemplo de função acima. 
-
-
-</div>
