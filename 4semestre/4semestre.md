@@ -48,13 +48,13 @@ Nesse projeto exercitei meu aprendizado rápido ao trabalhar pela primeira vez c
 
 Também utilizei organização e atenção a detalhes ao estruturar o repositório no padrão "parent" com submódulos separados para frontend e backend. Essa abordagem, incomum em relação aos semestres anteriores, exigiu cuidado extra na configuração de versionamento e integração entre os módulos para garantir que toda a equipe conseguisse trabalhar no projeto sem problemas de ambiente.
 
-### Dificuldade
+#### Dificuldade
 
 Minhas principais dificuldades no projeto TerraVision estiveram relacionadas à exigência de estruturar o repositório no GitHub utilizando o padrão "parent", separando os projetos de frontend e backend em submódulos distintos. Essa abordagem, embora traga benefícios para a organização e manutenção do código, demandou um esforço adicional para configurar corretamente os ambientes, garantir o versionamento adequado e integrar as diferentes partes do sistema.
 
 Outro desafio significativo foi o cadastro e manipulação de dados geoespaciais, especialmente ao lidar com resultados no formato MultiPolygon geometry. O processamento de dados geográficos exige a definição de parâmetros específicos, como o sistema de referência de coordenadas (CRS), que nem sempre são triviais de identificar ou configurar corretamente. Essas questões técnicas exigiram pesquisa adicional e testes para garantir a integridade e a precisão dos dados de geoprocessamento no sistema.
 
-## Aprendizados e ganhos com o projeto
+#### Aprendizados e ganhos com o projeto
 
 Durante o desenvolvimento do TerraVision, aprofundei meus conhecimentos na configuração e utilização do PostgreSQL com a extensão PostGIS, fundamental para o armazenamento e manipulação de dados geográficos. Exigindo exigiam o processamento de geometrias complexas, como MultiPolygons, para registrar áreas de ocorrência de daninhas a partir das marcações feitas pelo QA.
 

@@ -74,7 +74,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 O flyway ficou responsável por auxiliar nas migrações do banco de dados e guardar os scripts de migração. Para isso, precisei configurar o `application.properties` com as informações do banco de dados, como a URL, usuário e senha. Além disso, também configurei o `flyway.schemas` para indicar qual era o schema que o flyway deveria utilizar.
 
 
-### Dificuldade
+#### Dificuldade
 
 A principal dificuldade enfrentada no desenvolvimento do projeto foi a criação de um crawler capaz de capturar informações de diferentes sites, cada um com seu próprio design, estrutura de HTML e padrões de publicação. Diferentemente de APIs, que geralmente seguem um padrão de resposta bem definido, os portais de notícias apresentam grande diversidade na organização dos elementos, uso de classes CSS, tags e até mesmo na forma como o conteúdo é carregado (dinamicamente via JavaScript ou de forma estática).
 
@@ -84,7 +84,7 @@ Além disso, muitos sites implementam mecanismos de proteção contra automaçã
 
 Portanto, a dificuldade não esteve apenas na implementação técnica do crawler, mas principalmente na necessidade de constante adaptação e manutenção frente à diversidade e à evolução dos portais de notícias monitorados. Essa experiência evidenciou a importância de projetar soluções escaláveis e facilmente configuráveis para automação de coleta de dados em ambientes web heterogêneos. 
 
-## Aprendizados e ganhos com o projeto.
+#### Aprendizados e ganhos com o projeto.
 
 Houve aprofundei mais nos conhecimentos de docker e o devcontainer, que facilitou muito a configuração do ambiente de desenvolvimento.
 

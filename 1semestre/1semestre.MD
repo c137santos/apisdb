@@ -4,7 +4,7 @@ Sistema educacional de gestão e acompanhamento de scores de alunos
 
 ### Primeiro Semestre (2023-2)
 
-O projeto desenvolvido no primeiro semestre do curso teve como empresa parceira a própria FATEC São José dos Campos. Os requisitos foram apresentados pelo Prof. Fabiano Sabha Walczak (M2) e pelo Prof. Lucas Nadalete (P2), que assumiram o papel de clientes finais do projeto.
+O projeto desenvolvido no primeiro semestre do curso teve como empresa parceira a CADI São José dos Campos. Os requisitos foram apresentados pelo Prof. Fabiano Sabha Walczak (M2) e pelo Prof. Lucas Nadalete (P2), que assumiram o papel de clientes finais do projeto.
 
 Como se tratava da primeira API, a FATEC, na figura do Prof. Fabiano Sabha foi nosso cliente. 
 
@@ -59,7 +59,7 @@ A principal dificuldade esteve na falta de alinhamento entre as expectativas dos
 
 Além disso, a inexperiência natural dos alunos do 1º semestre, aliada ao uso indiscriminado de ferramentas como o ChatGPT sem o devido embasamento teórico, resultou em códigos que, por vezes, não atendiam aos requisitos do projeto.
 
-Esse cenário evidenciou a importância de um acompanhamento mais próximo e de orientações claras sobre o uso adequado dessas ferramentas, reforçando a necessidade de desenvolver uma base sólida de conhecimentos antes de recorrer a soluções automatizadas. Que por muitas vezes tem uma posição pasiva dos  professore, achando que os alunos saberão perguntar. 
+Esse cenário evidenciou a importância de um acompanhamento mais próximo e de orientações claras sobre o uso adequado dessas ferramentas, reforçando a necessidade de desenvolver uma base sólida de conhecimentos antes de recorrer a soluções automatizadas. Que por muitas vezes tem uma posição pasiva dosprofessore, achando que os alunos saberão perguntar. 
 
 ![alt text](image-1.png)
 
@@ -81,10 +81,12 @@ O trecho a seguir utiliza esse WGSI para subir o servidor e deixa-lo disponível
 def retorna_response(environ, start_response):
     from urls import url_match
     """
-    Essa é a função desenhada no padrão WSGI. Recebe request do navegador e gera response adequado.
+    Essa é a função desenhada no padrão WSGI.
+    Recebe request do navegador e gera response adequado.
     Args:
         environ (dict): Conteúdo preenchido pelo servidor. 
-        Como o método HTTP, cabeçalhos, URL, parâmetros de consulta e outras informações relacionadas à solicitação.
+        Como o método HTTP, cabeçalhos, URL, 
+        parâmetros de consulta e outras informações relacionadas à solicitação.
         start_response (str): callback enviado pelo servidor para acionar a requisição
         """
     request = HTTPRequest(environ)

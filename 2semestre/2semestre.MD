@@ -44,7 +44,7 @@ Nesse projeto desenvolvi minha adaptabilidade ao trabalhar como desenvolvedora f
 
 Também exercitei minha comunicação ao perceber que algumas mensagens minhas não eram interpretadas conforme esperado pelos demais membros, gerando pequenos conflitos. A partir dessa percepção, passei a verificar o entendimento compartilhado antes de tomar decisões técnicas, o que contribuiu para um ambiente de trabalho mais alinhado nas sprints seguintes.
 
-## Contribuições Individuais
+#### Contribuições Individuais
 
 Como desenvolvedora, atuei em diversas frentes do projeto, contribuindo diretamente para a implementação de funcionalidades essenciais. Fui responsável pelo desenvolvimento do cadastro manual de registros, criação de estações de monitoramento e implementação do relatório de situação com unidades de medida. Também atuei na padronização das conexões com o banco de dados via JDBC, garantindo maior estabilidade e organização do código.
 
