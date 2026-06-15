@@ -10,7 +10,6 @@ Profissionalmente, acumulo 4 anos de experiência em desenvolvimento web. Após 
 
 * [GitHub](https://github.com/c137santos)
 * [LinkedIn](https://www.linkedin.com/in/c137santos/)
-* [E-mail](mailto:clarasantosmf@gmail.com)
 
 ## Meus Principais Conhecimentos
 
