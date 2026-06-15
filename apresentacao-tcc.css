@@ -341,8 +341,8 @@ html, body {
 .cover-info { font-size: 0.6em; color: var(--text-dim); line-height: 1.8; }
 .cover-info strong { color: var(--text); font-size: 1.15em; }
 .cover-hint {
-  position: absolute; bottom: 26px; left: 36px;
-  font-size: 0.4em; color: var(--text-faint);
+  position: absolute; bottom: 5px; left: 36px;
+  font-size: 0.6em; color: var(--text-faint);
 }
 
 /* Two column */
